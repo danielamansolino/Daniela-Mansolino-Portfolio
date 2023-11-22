@@ -11,7 +11,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume } = data;
+  const { logo, showBlog, showResume } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -23,12 +23,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
-                onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
-              >
-                {name}.
-              </h1>
+            <img
+          src={logo}
+          alt="Your Logo"
+          onClick={() => router.push("/")}
+          className="cursor-pointer mob:p-2 laptop:p-0"
+        />
 
               <div className="flex items-center">
                 {data.darkMode && (
@@ -123,12 +123,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <h1
+        <div
+          dangerouslySetInnerHTML={{ __html: data.name }}
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
-        >
-          {name}.
-        </h1>
+          className="cursor-pointer mob:p-2 laptop:p-0"
+        />
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>
