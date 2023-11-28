@@ -2,9 +2,9 @@
   "name": "Daniela Mansolino",
   "logoLightMode": "https://imgur.com/uQ5iftR.png",
   "logoDarkMode": "https://imgur.com/uHvgR5U.png",
-  "headerTaglineOne": "Hello👋",
+  "headerTaglineOne": "Hello!",
   "headerTaglineTwo": "I'm Daniela Mansolino",
-  "headerTaglineThree": "full-stack software engineer",
+  "headerTaglineThree": "Full-Stack software engineer",
   "headerTaglineFour": " based in New Jersey, United States.",
   "showBlog": false,
   "darkMode": true,
@@ -66,25 +66,11 @@
     }
   ],
   "services": [
+    
     {
       "id": "1",
-      "title": "Art Direction",
-      "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
-    },
-    {
-      "id": "2",
-      "title": "Branding",
-      "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
-    },
-    {
-      "id": "3",
-      "title": "Web Design",
-      "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-    },
-    {
-      "id": "4",
-      "title": "3D Design",
-      "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+      "title": "Full-Stack Web Developer",
+      "description": "I am a dedicated Full Stack Software Engineer on a mission to craft robust and dynamic web solutions. With a passion for both front-end and back-end development, I thrive on turning ideas into functional, user-friendly, and scalable applications."
     }
   ],
   "aboutpara": "Hi my name is Daniela Mansolino.I am passionate about communication, learning and coding. My journalism background cultivated effective communication. Seeking new opportunities I moved to the United States five years ago where I developed adaptability. My curiosity guided my professional path to software engineering and my dedication led me to the completion of a Software Engineering program at General Assembly, where I honed my expertise. Now, my sights are set on a career as a full-stack developer. .",
@@ -111,7 +97,7 @@
       }
     ],
     "education": {
-      "universityName": "University X",
+      "universityName": "Universidad Tecnologica Equinoccial",
       "universityDate": "2016-2020",
       "universityPara": "Hi my name is Daniela Mansolino.I am passionate about communication, learning and coding. My journalism background cultivated effective communication. Seeking new opportunities I moved to the United States five years ago where I developed adaptability. My curiosity guided my professional path to software engineering and my dedication led me to the completion of a Software Engineering program at General Assembly, where I honed my expertise. Now, my sights are set on a career as a full-stack developer."
     },

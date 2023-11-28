@@ -29,7 +29,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 className="cursor-pointer mob:p-2 laptop:p-2 flex items-center"
               >
                 <img src={logoSrc} alt="Logo" className="h-8 sm:h-10 md:h-12 lg:h-16 xl:h-20 mr-2" />
-                <span>{name}</span>
+              
               </div>
             
               <div className="flex items-center">
