@@ -11,7 +11,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { logo, showBlog, showResume } = data;
+  const { name, showBlog, showResume } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -23,12 +23,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-            <img
-          src={logo}
-          alt="Your Logo"
-          onClick={() => router.push("/")}
-          className="cursor-pointer mob:p-2 laptop:p-0"
-        />
+              <h1
+                onClick={() => router.push("/")}
+                className="font-medium p-2 laptop:p-0 link"
+              >
+                {name}.
+              </h1>
 
               <div className="flex items-center">
                 {data.darkMode && (
