@@ -3,7 +3,6 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
-// Local Data
 import data from "../../data/portfolio.json";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
@@ -11,25 +10,28 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume } = data;
+  const { name, showBlog, showResume, logoLightMode, logoDarkMode } = data;
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const logoSrc = theme === "light" ? data.logoLightMode : data.logoDarkMode;
+  
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
+            <div
                 onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
+                className="cursor-pointer mob:p-2 laptop:p-2 flex items-center"
               >
-                {name}.
-              </h1>
-
+                <img src={logoSrc} alt="Logo" className="h-8 sm:h-10 md:h-12 lg:h-16 xl:h-20 mr-2" />
+                <span>{name}</span>
+              </div>
+            
               <div className="flex items-center">
                 {data.darkMode && (
                   <Button
