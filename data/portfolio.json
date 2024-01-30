@@ -19,7 +19,7 @@
       "title": "LinkedIn",
       "link": "https://www.linkedin.com/in/daniela-mansolino-5b2608143/"
     },
-    { "id": "3", "title": "Email", "link": "danielamansolino@gmail.com" }
+    { "id": "3", "title": "Email", "link":"mailto:danielamansolino@gmail.com"}
   ],
   "projects": [
     {
