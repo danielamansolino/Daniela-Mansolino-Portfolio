@@ -89,7 +89,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   <Button
                     onClick={() => window.open("mailto:danielamansolino@gmail.com")}
                   >
-                    Contact
+                    {/* Contact */}
                   </Button>
                 </div>
               ) : (
